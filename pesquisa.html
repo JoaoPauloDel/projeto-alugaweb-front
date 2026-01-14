@@ -19,11 +19,37 @@
 
         @theme {
             --color-laranja: #E04300;
+            --color-cinza: #595959;
+            --color-cinza2: #959595;
         }
     </style>
 </head>
 
 <body class="">
+    <div class="lg:flex lg:gap-60 lg:pt-8 items-center justify-center">
+        <div>
+            <div class="flex text-cinza font-semibold">
+                <p>Casas para alugar</p>
+                <box-icon name='chevron-right' class="fill-cinza"></box-icon>
+                <p>CE</p>
+                <box-icon name='chevron-right' class="fill-cinza"></box-icon>
+                <p>Fortaleza</p>
+            </div>
+            <p class="text-laranja font-bold text-xl">122 Casas para alugar em Fortaleza - CE</p>
+        </div>
+
+        <div class=" invisible  lg:visible flex border border-black/15 rounded-lg items-center lg:gap-20 p-3">
+            <div>
+                <p class="text-cinza text-sm">Ordenar por</p>
+                <p class="text-laranja font-semibold">Mais relevantes</p>
+            </div>
+            <div class="flex flex-col">
+                <box-icon name='chevron-up' class="fill-cinza2 h-4"></box-icon>
+                <box-icon name='chevron-down' class="fill-cinza2 h-4"></box-icon>
+            </div>
+        </div>
+    </div>
+
     <!-- CARD 1 -->
     <div class="border border-gray-300 flex mb-2 flex-col md:flex-row">
         <img src="./images/image2.png" alt="imagemCasa" class="">
